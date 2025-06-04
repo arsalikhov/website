@@ -6,6 +6,7 @@
       <link rel="icon" href="assets/icon.png">
 
       <style>
+
          @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
          body {
             font-family:'Lucida Console', monospace;
@@ -17,65 +18,201 @@
             padding: 0 50px;
             box-sizing: border-box;
          }
-             .landing {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                min-height:100vh; min-height:100dvh;
-                text-align: center;
-             }
-             svg { width: 100%; height: auto; }
-             .svg-container { width: 100%; max-width: 400px; display: inline-block; }
-             .separator { letter-spacing: -9px; }
-             hr { border: none; height: 2px; background-color: lightgrey; width: 100%; margin: 30px auto; }
-             table { border-collapse: collapse; text-align: center; width: 100%; }
-             td {
-                padding: 5px 20px;
-                border: 1px solid #dddddd;
-             }
-             .quiet, .links-container a { color: inherit; }
-             .links-container { font-size: 24px; margin: 20px; }
-             .links-container a { text-decoration: none; margin: 0 10px; }
-             .product-photo { display: block; max-height: 640px; margin: 0 auto; }
-             .faqtable dt { margin-bottom: 0.75em; font-style: italic; }
-             .faqtable dd { margin-left: 0; margin-bottom: 2em; }
+          .landing {
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             justify-content: center;
+             min-height:100vh; min-height:100dvh;
+             text-align: center;
+          }
+          svg { width: 100%; height: auto; }
+          .svg-container { width: 100%; max-width: 400px; display: inline-block; }
+          .separator { letter-spacing: -9px; }
+          hr { border: none; height: 2px; background-color: lightgrey; width: 100%; margin: 30px auto; }
+          table { border-collapse: collapse; text-align: center; width: 100%; }
+          td {
+             padding: 5px 20px;
+             border: 1px solid #dddddd;
+          }
+          .quiet, .links-container a { color: inherit; }
+          .links-container { font-size: 24px; margin: 20px; }
+          .links-container a { text-decoration: none; margin: 0 10px; }
+          .product-photo { display: block; max-height: 640px; margin: 0 auto; }
+          .faqtable dt { margin-bottom: 0.75em; font-style: italic; }
+          .faqtable dd { margin-left: 0; margin-bottom: 2em; }
 
-             footer {
-                background-color: #f5f5f5;
-                color: black;
-                padding: 2rem 0;
-                margin-top: auto;
-                border-top: 1px solid #e0e0e0;
-             }
-
-             .footer-content {
-                max-width: 1280px;
-                margin: 0 auto;
-                padding: 0 1rem;
-                text-align: center;
-             }
-
-             .footer-text {
-                margin-bottom: 0.5rem;
-                font-size: 0.9rem;
-                line-height: 1.6;
-             }
-
-             .copyright {
-                font-size: 0.85rem;
-                color: #666;
-                margin-top: 1rem;
-             }
-
-             @media (max-width: 768px) {
-                .footer-links {
+           footer {
+               background-color: #f5f5f5;
+               color: black;
+               padding: 2rem 0;
+               margin-top: auto;
+               border-top: 1px solid #e0e0e0;
+           }
+           
+           .footer-content {
+               max-width: 1200px;
+               margin: 0 auto;
+               padding: 0 1rem;
+               text-align: center;
+           }
+           
+           .footer-text {
+               margin-bottom: 0.5rem;
+               font-size: 0.9rem;
+               line-height: 1.6;
+           }
+           
+           .copyright {
+               font-size: 0.85rem;
+               color: #666;
+               margin-top: 1rem;
+           }
+           
+           .reach-out {
+               margin: 3rem 0;
+               padding: 2rem 0;
+           }
+           
+           .reach-out h2 {
+               margin-bottom: 1.5rem;
+               font-size: 1.5rem;
+               font-weight: 600;
+           }
+           
+           .contact-links {
+               display: flex;
+               justify-content: center;
+               gap: 2rem;
+               flex-wrap: wrap;
+           }
+           
+           .contact-links a {
+               color: black;
+               text-decoration: none;
+               padding: 1rem 1.5rem;
+               border: 2px solid black;
+               border-radius: 8px;
+               font-weight: 500;
+               transition: all 0.3s ease;
+               display: flex;
+               align-items: center;
+               gap: 0.75rem;
+               min-width: 140px;
+               justify-content: center;
+           }
+           
+           .contact-links a:hover {
+               background-color: black;
+               color: white;
+               transform: translateY(-2px);
+               box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+           }
+           
+           .contact-links a svg {
+               width: 20px;
+               height: 20px;
+               flex-shrink: 0;
+           }
+           
+           .email-section {
+               margin-top: 2rem;
+               display: flex;
+               justify-content: center;
+           }
+           
+           .email-display {
+               color: black;
+               text-decoration: none;
+               padding: 1rem 1.5rem;
+               border: 2px solid black;
+               border-radius: 8px;
+               font-weight: 500;
+               transition: all 0.3s ease;
+               display: flex;
+               align-items: center;
+               gap: 0.75rem;
+               min-width: 180px;
+               justify-content: center;
+               cursor: pointer;
+               user-select: none;
+           }
+           
+           .email-display:hover {
+               background-color: black;
+               color: white;
+               transform: translateY(-2px);
+               box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+           }
+           
+           .email-display svg {
+               width: 20px;
+               height: 20px;
+               flex-shrink: 0;
+           }
+           
+           @media (max-width: 768px) {
+               .contact-links {
+                   flex-direction: column;
+                   align-items: center;
+                   gap: 1rem;
+               }
+               
+               .contact-links a {
+                   width: 200px;
+                   text-align: center;
+               }
+               
+               .email-display {
+                   width: 200px;
+               }
+           }
+           
+           
+           @media (max-width: 768px) {
+               .footer-links {
                    flex-direction: column;
                    gap: 1rem;
-                }
-             }
-      </style>
-   </head> 
+               }
+           }
+       </style> 
+
+       <script>
+         document.addEventListener('DOMContentLoaded', function() {
+             const emailDisplay = document.querySelector('.email-display');
+             const emailText = document.getElementById('email-text');
+             
+             // Obfuscated email parts
+             const user = 'arsalikhov';
+             const domain = 'gmail';
+             const tld = 'com';
+             
+             let revealed = false;
+             
+             emailDisplay.addEventListener('click', function() {
+                 if (!revealed) {
+                     const email = user + '@' + domain + '.' + tld;
+                     emailText.textContent = email;
+                     revealed = true;
+                     
+                     // Copy to clipboard
+                     navigator.clipboard.writeText(email).then(function() {
+                         const originalText = emailText.textContent;
+                         emailText.textContent = 'Copied to clipboard!';
+                         setTimeout(function() {
+                             emailText.textContent = originalText;
+                         }, 2000);
+                     }).catch(function() {
+                         // Fallback for older browsers
+                         emailText.textContent = email;
+                     });
+                 }
+             });
+         });
+      </script>
+
+
+   </head>
    <body>
       <div class="landing" >
          <h1 style="font-family: 'Pixelify Sans', sans-serif; font-size: 200px; margin: 0;">Arslan Salikhov</h1>
@@ -83,7 +220,7 @@
             <a href="#about">About Me</a><span class="separator">|</span>
             <a href="#experience">Experience</a><span class="separator">|</span>
             <a href="#resume">Resume</a><span class="separator">|</span>
-            <a href="#contact">Contact</a>
+            <a href="#contact">Reach Out</a>
          </div>
       </div>
       <hr>
@@ -97,7 +234,33 @@
       <h2 id="projects">Projects</h2>
       <hr>
 
-      <h2 id="contact">Contact</h2>
+
+      <h2 id="contact">Reach Out</h2>
+      
+      <p> All the ways to reach me: </p>
+      
+      <div class="contact-links">
+          <a href="https://github.com/arsalikhov" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+              GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/arsalikhov/" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+              LinkedIn
+          </a>
+      </div>
+      <div class="email-section">
+          <div class="email-display">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h.72L12 10.09l9.644-6.269h.72c.904 0 1.636.732 1.636 1.636z"/>
+              </svg>
+              <span id="email-text">Click to reveal email</span>
+          </div>
+      </div>
       <hr>
 
       <footer>
